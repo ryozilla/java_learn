@@ -44,6 +44,25 @@ public class ArrayMethodTest {
         //原数组被修改代表arr4,arr1两个变量指向同一数组
         arr5[1] = "atari";
         System.out.println(Arrays.toString(arr5));
+        System.out.println();
 
+        //查询数组
+        System.out.println(Arrays.binarySearch(arr3,81));
+        System.out.println(Arrays.binarySearch(arr3,83));
+        System.out.println(Arrays.binarySearch(arr1,"83"));
+        /* 使用binarySearch()方法会返回查询值的位置信息。
+         * 如果key在查询数组内即返回相应位置数值
+         * 否则返回-1或“-”（插入点） -> 范围内第一个大于此键的元素索引
+         */
+        System.out.println();
+
+        int[] arr7 = new int[]{32,61,49,73,64,33,81,35,99,64,82};
+        Arrays.sort(arr7);
+        System.out.println("arr7 : " + Arrays.toString(arr7));
+        //binarySearch()方法也可以选择区间查询数组。
+        System.out.println(Arrays.binarySearch(arr7,2,5,36));
+        //元素不在查询范围内的元素插入位置的输出和不加范围查询的输出结果应该是一样的。
+        System.out.println(Arrays.binarySearch(arr7,2,5,33));
+        //本来在数组中的元素不在查询范围内，方法输出的值也是"-"（插入点）
     }
 }
