@@ -18,14 +18,13 @@ public class Complex2 {
         Array.printArray(array);
     }
 
-    public static int[][] exchangeRowAndList(int[][] arr) {
-        for (int i = 0; i <= arr.length / 2; i++) {
-            for (int j = 0; j <= arr[i].length / 2; j++) {
+    public static void exchangeRowAndList(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < i; j++) {
                 int temp = arr[i][j];
                 arr[i][j] = arr[j][i];
                 arr[j][i] = temp;
             }
         }
-        return arr;
     }
 }

@@ -2,6 +2,11 @@
 
 作为一个初学者跟着《java从入门到精通》及其他资料敲的练习代码。
 
+## 尚未解决的问题
+
+- Math 计算阶乘数值错误的问题
+- train3.Complex5 题目没看懂
+
 ## 其中一些可以运行来玩玩的小实例
 
 - 细胞分裂实验 -> train4.Training3
@@ -21,10 +26,14 @@
 
 ### Array
 
-- printArray() ->打印数组
-    - public static void printArray(int[] arr) -> 打印int型一维数组
-    - public static void printArray(String[] arr) -> 打印String型一维数组
-    - public static void printArray(double[] arr) -> 打印double型一维数组
-    - public static void printArray(char[] arr) -> 打印char型一维数组
-    - public static void printArray(int[][] arr) -> 打印int型二维数组
-    - public static void printArray(String[][] arr) -> 打印String型二维数组
+- printArray() -> 打印数组
+    - public static void printArray(int[] arr)
+    - public static void printArray(String[] arr)
+    - public static void printArray(double[] arr)
+    - public static void printArray(char[] arr)
+    - public static void printArray(int[][] arr)
+    - public static void printArray(String[][] arr)
+
+- exchangeRowAndList() -> 矩阵转置,交换二维数组的行和列
+    - public static void exchangeRowAndList(int[][] arr)
+    - public static void exchangeRowAndList(String[][] arr)
