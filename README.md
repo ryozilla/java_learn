@@ -13,8 +13,9 @@
 - 斐波那契数列 -> train4.Training4
 - 查找素数 -> train4.Complex5
 - 判断int[3][3]数组每行每列以及每个对角线的值相加是否都相同 -> train5.Complex1
-- 矩阵转置 -> train5.Complex2（未完成）
-- 输出杨辉三角 -> train5.Complex3
+- 矩阵转置 -> train5.Complex2
+- 输出杨辉三角 -> train5.Complex3（还有问题）
+- 推箱子（固定地图） -> train5.Complex4
 
 ## methods包里的类方法
 
@@ -31,6 +32,7 @@
     - public static void printArray(String[] arr)
     - public static void printArray(double[] arr)
     - public static void printArray(char[] arr)
+    - public static void printArray(boolean[] arr)
     - public static void printArray(int[][] arr)
     - public static void printArray(String[][] arr)
 

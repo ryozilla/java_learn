@@ -47,6 +47,17 @@ public class Array {
         }
     }
 
+    public static void printArray(boolean[] arr) {
+        //打印一维数组
+        System.out.print("[");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i + 1 == arr.length) continue;
+            System.out.print(" ");
+        }
+        System.out.println("]");
+    }
+
     public static void exchangeRowAndList(int[][] arr) {
         //交换二维数组的行和列
         for (int i = 0; i < arr.length; i++) {
