@@ -29,9 +29,9 @@ public class Complex6_Object {
 
         System.out.println("学生成绩结果如下");
         StudentT5.head();
-        StudentT5.printStudent(stu1);
-        StudentT5.printStudent(stu2);
-        StudentT5.printStudent(stu3);
+        stu1.printStudent();
+        stu2.printStudent();
+        stu3.printStudent();
     }
 }
 
@@ -63,20 +63,15 @@ class StudentT5 {
 
     public static void head() {
         System.out.println("-------------------------------------------------------");
-        System.out.print("学号    ");
-        System.out.print("语文成绩    ");
-        System.out.print("数学成绩    ");
-        System.out.print("英语成绩    ");
-        System.out.print("平均成绩    ");
-        System.out.println("总成绩");
+        System.out.println("学号    语文成绩    数学成绩    英语成绩    平均成绩    总成绩");
     }
 
-    public static void printStudent(StudentT5 stu) {
-        System.out.print(stu.id + "        ");
-        System.out.print(stu.ch + "        ");
-        System.out.print(stu.math + "        ");
-        System.out.print(stu.en + "        ");
-        System.out.print(stu.averageScore + "        ");
-        System.out.println(stu.sumScore + "      ");
+    public void printStudent() {
+        System.out.print(this.id + "        ");
+        System.out.print(this.ch + "        ");
+        System.out.print(this.math + "        ");
+        System.out.print(this.en + "        ");
+        System.out.print(this.averageScore + "        ");
+        System.out.println(this.sumScore + "      ");
     }
 }
