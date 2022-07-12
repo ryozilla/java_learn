@@ -9,22 +9,22 @@ package train6;
 public class Training4 {
     public static void main(String[] args) {
         //调用有形参的构造方法
-        CreditCardT4 user1 = new CreditCardT4("182739");
+        CreditCard user1 = new CreditCard("182739");
         //调用无形参的构造方法
-        CreditCardT4 user2 = new CreditCardT4();
+        CreditCard user2 = new CreditCard();
         System.out.println("用户为 user1, " + user1.getPsw());
         System.out.println("用户为 user2, " + user2.getPsw());
     }
 }
 
-class CreditCardT4 {
+class CreditCard {
     String psw;
 
-    public CreditCardT4(String psw) {
+    public CreditCard(String psw) {
         this.psw = psw;
     }
 
-    public CreditCardT4() {
+    public CreditCard() {
         this("123456");
     }
 

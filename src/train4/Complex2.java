@@ -25,14 +25,14 @@ public class Complex2 {
         }
 
         //下半部分菱形
-        for (int i = 8; i >0; i--) {
+        for (int i = 8; i > 0; i--) {
             int j = 0;
             int k = 0;
             while (j < (10 - i)) {
                 System.out.print(str1);
                 j++;
             }
-            while (k<(2*i-1)){
+            while (k < (2 * i - 1)) {
                 System.out.print(str2);
                 k++;
             }

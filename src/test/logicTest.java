@@ -1,7 +1,7 @@
 package test;
 
 public class logicTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         boolean boo1 = true, boo2 = false;
 
         //六种逻辑运算符
@@ -23,7 +23,7 @@ public class logicTest {
 
         //单与和双与的区别
         {
-            boolean boo3 = boo2 && boo1 && (1%0 == 1);
+            boolean boo3 = boo2 && boo1 && (1 % 0 == 1);
             System.out.println("boo3 = " + boo3);
             //boolean boo4 = boo2 & boo1  &(1%0 == 1);
             //System.out.println("boo4 = " + boo4);
@@ -35,7 +35,7 @@ public class logicTest {
 
         //单或和双或的区别
         {
-            boolean boo3 = boo2 || boo1 || (1%0 == 1);
+            boolean boo3 = boo2 || boo1 || (1 % 0 == 1);
             System.out.println("boo3 = " + boo3);
             //boolean boo4 = boo2 | boo1 | (1%0 == 1);
             //System.out.println("boo4 = " + boo4);

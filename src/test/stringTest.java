@@ -2,7 +2,7 @@ package test;
 
 public class stringTest {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String nn = "\n";
 
         String str1 = "你好";

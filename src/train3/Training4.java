@@ -1,4 +1,5 @@
 package train3;
+
 //输出"ABCDEFG"
 public class Training4 {
     public static void main(String[] args) {

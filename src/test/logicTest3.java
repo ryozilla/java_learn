@@ -5,9 +5,9 @@ public class logicTest3 {
         boolean x = true, y = false;
         short z = 42;
         //if(y == true)
-            if ((z++ == 42) && (y = true)) {
-                z++;
-            }
+        if ((z++ == 42) && (y = true)) {
+            z++;
+        }
 
         if ((x = false) || (++z == 45)) {
             z++;

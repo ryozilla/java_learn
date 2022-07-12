@@ -16,6 +16,7 @@
 - 矩阵转置 -> train5.Complex2
 - 输出杨辉三角 -> train5.Complex3（还有问题）
 - 推箱子（固定地图） -> train5.Complex4
+- 厘米与英寸互转 -> train6.Complex4
 
 ## methods包里的类方法
 

@@ -4,7 +4,9 @@ package train5;
  * 10名学生在一次英语竞赛中的成绩分别为71、89、67、53、78、64、92、56、74和85，
  * 使用冒泡排序编写一个程序，将这10名学生的英语竞赛成绩由小到大进行排序。
  * */
+
 import methods.Array;
+
 public class Training7 {
     public static void main(String[] args) {
         int[] score = new int[]{71, 89, 67, 53, 78, 64, 92, 56, 74, 85};

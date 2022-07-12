@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class switchTest {
     static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
         //switch
         //switch后的表达式必须是"整型" -> (case后面不能写小数)、字符型、字符串、枚举类型。
@@ -42,7 +43,7 @@ public class switchTest {
         //字符串
         System.out.println("请输入\"密码\"");
         String str = scan.nextLine();
-        switch (str){
+        switch (str) {
             case "114514":
                 System.out.println("这是密码1（臭码1）");
                 break;
@@ -62,13 +63,13 @@ public class switchTest {
 
         //switch增强型
         /*
-        * 使用 "->"
-        * 由于需要返回值，故需要确保在所有的情况下都有返回值，所以"需要涵盖所有可能的情况"
-        * 不再需要 break
-        * 可以进行 case 的合并，之间以逗号分隔
-        * */
+         * 使用 "->"
+         * 由于需要返回值，故需要确保在所有的情况下都有返回值，所以"需要涵盖所有可能的情况"
+         * 不再需要 break
+         * 可以进行 case 的合并，之间以逗号分隔
+         * */
         int tag = 1;
-        String result = switch (tag){
+        String result = switch (tag) {
             case 1 -> "401";
             case 2 -> "402";
             case 3 -> "403";
