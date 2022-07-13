@@ -8,9 +8,6 @@ import java.util.Scanner;
 
 /*
  * 推箱子游戏
- *
- * 流程
- * 生成地图 -> 游戏介绍 -> 游戏操作 -> 通关判定
  * */
 public class Complex4 {
     static Scanner scan = new Scanner(System.in);
@@ -27,13 +24,13 @@ public class Complex4 {
     public static void main(String[] args) {
         String[][] map = mapCreate();
         System.out.println("欢迎游玩本游戏（就是个推箱子游戏）");
-        do {
+        while (true) {
             mapPrint(map);
             System.out.println("WASD对应上左下右移动");
             System.out.println("请输入你的指令：");
             String input = scan.next();
             move(map, input);
-        } while (true);
+        }
     }
 
     private static String[][] mapCreate() {
@@ -41,8 +38,8 @@ public class Complex4 {
         String[][] map = new String[8][10];
 
         //初始化map
-        for (int i = 0; i < map.length; i++) {
-            Arrays.fill(map[i], blank);
+        for (String[] str : map) {
+            Arrays.fill(str, blank);
         }
         //填充四周的墙
         for (int i = 0; i < map.length; i++) {
@@ -72,8 +69,7 @@ public class Complex4 {
 
     private static void move(String[][] map, String input) {
         switch (input) {
-            case "W":
-            case "w":
+            case "W", "w" -> {
                 if (map[x - 1][y].equals(blank)) {
                     //交换我和空气
                     map[x][y] = blank;
@@ -89,19 +85,14 @@ public class Complex4 {
                     }
                     //判断箱子将移动的位置是不是空气
                     if (map[x - 2][y].equals(blank)) {
-                        //交换箱子和空气
-                        String temp = map[x - 1][y];
-                        map[x - 1][y] = map[x - 2][y];
-                        map[x - 2][y] = temp;
-                        //交换我和空气
-                        map[x][y] = blank;
+                        map[x - 2][y] = box;    //箱子落点
+                        map[x][y] = blank;      //“我”离开当前位置
                         x--;
-                        map[x][y] = me;
-                        break;
+                        map[x][y] = me;         //“我”现在的位置
                     }
                 }
-            case "A":
-            case "a":
+            }
+            case "A", "a" -> {
                 if (map[x][y - 1].equals(blank)) {
                     //交换我和空气
                     map[x][y] = blank;
@@ -117,20 +108,14 @@ public class Complex4 {
                     }
                     //判断箱子将移动的位置是不是空气
                     if (map[x][y - 2].equals(blank)) {
-                        //交换箱子和空气
-                        String temp = map[x][y - 1];
-                        map[x][y - 1] = map[x][y - 2];
-                        map[x][y - 2] = temp;
-                        //交换我和空气
-                        map[x][y] = blank;
+                        map[x][y - 2] = box;    //箱子落点
+                        map[x][y] = blank;      //“我”离开当前位置
                         y--;
-                        map[x][y] = me;
-                        break;
+                        map[x][y] = me;         //“我”现在的位置
                     }
-
                 }
-            case "S":
-            case "s":
+            }
+            case "S", "s" -> {
                 if (map[x + 1][y].equals(blank)) {
                     //交换我和空气
                     map[x][y] = blank;
@@ -146,19 +131,14 @@ public class Complex4 {
                     }
                     //判断箱子将移动的位置是不是空气
                     if (map[x + 2][y].equals(blank)) {
-                        //交换箱子和空气
-                        String temp = map[x + 1][y];
-                        map[x + 1][y] = map[x + 2][y];
-                        map[x + 2][y] = temp;
-                        //交换我和空气
-                        map[x][y] = blank;
+                        map[x + 2][y] = box;    //箱子落点
+                        map[x][y] = blank;      //“我”离开当前位置
                         x++;
-                        map[x][y] = me;
-                        break;
+                        map[x][y] = me;         //“我”现在的位置
                     }
                 }
-            case "D":
-            case "d":
+            }
+            case "D", "d" -> {
                 if (map[x][y + 1].equals(blank)) {
                     //交换我和空气
                     map[x][y] = blank;
@@ -174,22 +154,15 @@ public class Complex4 {
                     }
                     //判断箱子将移动的位置是不是空气
                     if (map[x][y + 2].equals(blank)) {
-                        //交换箱子和空气
-                        String temp = map[x][y + 1];
-                        map[x][y + 1] = map[x][y + 2];
-                        map[x][y + 2] = temp;
-                        //交换我和空气
-                        map[x][y] = blank;
+                        map[x][y + 2] = box;    //箱子落点
+                        map[x][y] = blank;      //“我”离开当前位置
                         y++;
-                        map[x][y] = me;
-                        break;
+                        map[x][y] = me;         //“我”现在的位置
                     }
                 }
-            case "exit":
-                System.exit(114514);
-            default:
-                System.out.println("输入有误，请重新输入");
-                break;
+            }
+            case "exit" -> System.exit(114514);
+            default -> System.out.println("输入有误，请重新输入");
         }
     }
 
