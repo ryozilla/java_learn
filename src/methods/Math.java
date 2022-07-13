@@ -25,7 +25,13 @@ public class Math {
             System.exit(1);
         }
 
-        return factorial(n) / factorial(n - m);
+        int result = 1;
+        for (int i = 0; i < m; i++) {
+            result *= n - i;
+        }
+
+        //return factorial(n) / factorial(n - m);
+        return result;
     }
 
     public static int combination(int n, int m) {

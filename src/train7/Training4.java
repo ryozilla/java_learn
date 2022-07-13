@@ -3,7 +3,6 @@ package train7;
 /*
  * 让猫狗是同类
  * 重写 equals()方法，进而得到一个荒唐的结果：猪和狗是同类。
- * 种类
  * */
 public class Training4 {
     public static void main(String[] args) {
