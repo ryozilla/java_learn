@@ -12,8 +12,8 @@ public class Training4 {
     }
 }
 
-class Animal {
-    public boolean equals(Animal obj) {
+class AnimalT4 {
+    public boolean equals(AnimalT4 obj) {
         if (this == obj) {
             return true;
         } else if (this instanceof Pig && obj instanceof Dog) {
@@ -22,9 +22,9 @@ class Animal {
     }
 }
 
-class Pig extends Animal {
+class Pig extends AnimalT4 {
 }
 
-class Dog extends Animal {
+class Dog extends AnimalT4 {
 }
 

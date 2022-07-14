@@ -7,15 +7,15 @@ package train7;
 public class Training2 {
     public static void main(String[] args) {
         System.out.println("本应为5元一斤的某水果");
-        System.out.println(new Fruit(5));
+        System.out.println(new fruit(5));
         System.out.println(new DecoratedFruit(5));
     }
 }
 
-class Fruit {
+class fruit {
     double price;
 
-    protected Fruit(double price) {
+    protected fruit(double price) {
         this.price = price;
     }
 
@@ -24,7 +24,7 @@ class Fruit {
     }
 }
 
-class DecoratedFruit extends Fruit {
+class DecoratedFruit extends fruit {
     double nowPrice;
 
     protected DecoratedFruit(double price) {

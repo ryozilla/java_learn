@@ -6,6 +6,8 @@
 
 - Math 计算阶乘数值错误的问题
 - train3.Complex5 题目没看懂
+- train7.Training5 不会开车不会写
+- train7.Training8 我不知道总统是不是公务员＞︿＜
 
 ## 其中一些可以运行来玩玩的小实例
 
