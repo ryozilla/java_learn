@@ -13,8 +13,8 @@ public class Complex6_Object {
 
     public static void main(String[] args) {
         //创建前两位同学的成绩数据
-        StudentT5 stu1 = new StudentT5(1, 97, 92, 99);
-        StudentT5 stu2 = new StudentT5(2, 91, 97, 92);
+        Student stu1 = new Student(1, 97, 92, 99);
+        Student stu2 = new Student(2, 91, 97, 92);
 
         System.out.println("请输入第三名学生的学号：");
         int id = scan.nextInt();
@@ -25,17 +25,17 @@ public class Complex6_Object {
         System.out.println("请输入英语成绩：");
         int en = scan.nextInt();
 
-        StudentT5 stu3 = new StudentT5(id, ch, math, en);
+        Student stu3 = new Student(id, ch, math, en);
 
         System.out.println("学生成绩结果如下");
-        StudentT5.head();
+        Student.head();
         stu1.printStudent();
         stu2.printStudent();
         stu3.printStudent();
     }
 }
 
-class StudentT5 {
+class Student {
     int id;
     int ch;
     int math;
@@ -43,7 +43,7 @@ class StudentT5 {
     double averageScore;
     int sumScore;
 
-    public StudentT5(int id, int ch, int math, int en) {
+    public Student(int id, int ch, int math, int en) {
         this.id = id;
         this.ch = ch;
         this.math = math;
