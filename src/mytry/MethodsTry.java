@@ -1,3 +1,5 @@
+package mytry;
+
 import methods.Array;
 
 import java.util.Arrays;
