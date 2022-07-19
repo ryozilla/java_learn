@@ -6,8 +6,6 @@
 
 - Math 计算阶乘数值错误的问题
 - train5.Complex5 现在是四子棋状态，还不知道有什么bug
-- train7.Training5 不会开车不会写
-- train7.Training8 我不知道总统是不是公务员＞︿＜
 
 ## 其中一些可以运行来玩玩的小实例
 
