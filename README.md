@@ -4,7 +4,7 @@
 
 ## 尚未解决的问题
 
-- Math 计算阶乘数值错误的问题
+- Math 将三个方法的返回值设成double了，等学了Integer类后再改
 - train5.Complex5 现在是四子棋状态，还不知道有什么bug
 
 ## 其中一些可以运行来玩玩的小实例
@@ -22,9 +22,9 @@
 
 ### Math
 
-- public static int factorial(int x) -> 计算阶乘
-- public static int arrangement(int n, int m) -> 计算排列数
-- public static int combination(int n, int m) -> 计算组合数
+- public static double factorial(int x) -> 计算阶乘
+- public static double arrangement(int n, int m) -> 计算排列数
+- public static double combination(int n, int m) -> 计算组合数
 
 ### Array
 

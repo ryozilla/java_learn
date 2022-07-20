@@ -1,12 +1,11 @@
 package mytry;
 
-import methods.Array;
+import methods.Math;
+import MyException.NumberErrorException;
 
-import java.util.Arrays;
-
-// 列
 public class MethodsTry {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NumberErrorException {
+        /*
         //矩阵转置
         String[][] strArr1 = new String[5][5];
 
@@ -20,7 +19,9 @@ public class MethodsTry {
         Array.exchangeRowAndList(strArr1);
         Array.printArray(strArr1);
         line();
+         */
 
+        /*
         //探究了一下train5.Complex4答案怎么让&移动
         String[][] strArr2 = new String[5][5];
         for (int i = 0; i < strArr2.length; i++) {
@@ -35,6 +36,13 @@ public class MethodsTry {
         y++;
         strArr2[x][y] = "&";    //&新位置
         Array.printArray(strArr2);
+         */
+
+        try {
+            System.out.println(Math.factorial(-1));
+        } catch (NumberErrorException e) {
+            e.printStackTrace();
+        }
     }
 
     private static void line() {
