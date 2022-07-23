@@ -1,6 +1,6 @@
 package mytry;
 
-import methods.Math;
+import methods.Maths;
 import MyException.NumberErrorException;
 
 public class MethodsTry {
@@ -39,7 +39,7 @@ public class MethodsTry {
          */
 
         try {
-            System.out.println(Math.factorial(-1));
+            System.out.println(Maths.factorial(-1));
         } catch (NumberErrorException e) {
             e.printStackTrace();
         }
