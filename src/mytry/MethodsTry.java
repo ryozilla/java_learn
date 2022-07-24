@@ -45,7 +45,7 @@ public class MethodsTry {
         }
     }
 
-    private static void line() {
+    public static void line() {
         //图个方便
         System.out.println("----------------------------");
     }
