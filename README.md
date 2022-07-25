@@ -42,3 +42,8 @@
 - exchangeRowAndList() -> 矩阵转置,交换二维数组的行和列
     - public static void exchangeRowAndList(int[][] arr)
     - public static void exchangeRowAndList(String[][] arr)
+
+### JapaneseTurn
+
+- public static String romajiToKatakana(String romaji, String regex) -> 罗马字转平假名
+  - 目前不支持长音连写、促音...
