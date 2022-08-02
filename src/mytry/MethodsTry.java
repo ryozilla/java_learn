@@ -1,11 +1,11 @@
 package mytry;
 
-import methods.Maths;
 import MyException.NumberErrorException;
+import methods.Array;
 
 public class MethodsTry {
     public static void main(String[] args) throws NumberErrorException {
-        /*
+
         //矩阵转置
         String[][] strArr1 = new String[5][5];
 
@@ -19,7 +19,9 @@ public class MethodsTry {
         Array.exchangeRowAndList(strArr1);
         Array.printArray(strArr1);
         line();
-         */
+
+        Integer[] ints = new Integer[]{3, 4, 4, 3, 1, 2, 1};
+        Array.printArray(ints);
 
         /*
         //探究了一下train5.Complex4答案怎么让&移动
@@ -38,11 +40,13 @@ public class MethodsTry {
         Array.printArray(strArr2);
          */
 
+        /*
         try {
             System.out.println(Maths.factorial(-1));
         } catch (NumberErrorException e) {
             e.printStackTrace();
         }
+        */
     }
 
     public static void line() {

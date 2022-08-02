@@ -1,47 +1,47 @@
 package methods;
 
 public class Array {
-    public static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+    public static <T> void printArray(T[] arr) {
+        for (T t : arr) {
+            System.out.print(t + " ");
         }
         System.out.println();
     }
 
-    public static void printArray(String[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+    public static void printArray(int[] arr) {
+        for (int j : arr) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }
 
     public static void printArray(double[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (double v : arr) {
+            System.out.print(v + " ");
         }
         System.out.println();
     }
 
     public static void printArray(char[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (char c : arr) {
+            System.out.print(c + " ");
         }
         System.out.println();
     }
 
     public static void printArray(int[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
+        for (int[] ints : arr) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
             }
             System.out.println();
         }
     }
 
-    public static void printArray(String[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
+    public static <T> void printArray(T[][] arr) {
+        for (T[] ts : arr) {
+            for (T t : ts) {
+                System.out.print(t + " ");
             }
             System.out.println();
         }
@@ -58,22 +58,11 @@ public class Array {
         System.out.println("]");
     }
 
-    public static void exchangeRowAndList(int[][] arr) {
+    public static <T> void exchangeRowAndList(T[][] arr) {
         //交换二维数组的行和列
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < i; j++) {
-                int temp = arr[i][j];
-                arr[i][j] = arr[j][i];
-                arr[j][i] = temp;
-            }
-        }
-    }
-
-    public static void exchangeRowAndList(String[][] arr) {
-        //交换二维数组的行和列
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < i; j++) {
-                String temp = arr[i][j];
+                T temp = arr[i][j];
                 arr[i][j] = arr[j][i];
                 arr[j][i] = temp;
             }

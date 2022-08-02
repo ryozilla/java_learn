@@ -6,6 +6,7 @@
 
 - Math 将三个方法的返回值设成double了，等学了Integer类后再改
 - train.t5.Complex5 现在是四子棋状态，还不知道有什么bug
+- train.t10.Training12 不会正则(。>︿<)_θ)
 
 ## 其中一些可以运行来玩玩的小实例
 
@@ -32,18 +33,17 @@
 
 - printArray() -> 打印数组
     - public static void printArray(int[] arr)
-    - public static void printArray(String[] arr)
+    - public static <T> void printArray(T[] arr)
     - public static void printArray(double[] arr)
     - public static void printArray(char[] arr)
     - public static void printArray(boolean[] arr)
+    - public static <T> void printArray(T[][] arr)
     - public static void printArray(int[][] arr)
-    - public static void printArray(String[][] arr)
 
 - exchangeRowAndList() -> 矩阵转置,交换二维数组的行和列
-    - public static void exchangeRowAndList(int[][] arr)
-    - public static void exchangeRowAndList(String[][] arr)
+    - public static <T> void exchangeRowAndList(T[][] arr)
 
 ### JapaneseTurn
 
 - public static String romajiToKatakana(String romaji, String regex) -> 罗马字转平假名
-  - 目前不支持长音连写、促音...
+    - 目前不支持长音连写、促音...
