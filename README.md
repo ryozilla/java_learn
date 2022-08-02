@@ -18,6 +18,7 @@
 - 输出杨辉三角 -> train.t5.Complex3（还有问题）
 - 推箱子（固定地图） -> train.t5.Complex4
 - 厘米与英寸互转 -> train.t6.Complex4
+- ping自己的主机ip -> train.t11.Training12
 
 ## methods包里的类方法
 
