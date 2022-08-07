@@ -10,13 +10,10 @@ public class Maths {
         }
 
         //计算阶乘
-        int i = 0;
-        double result = 1;
-        while (i < x) {
-            i++;
-            result *= i;
+        if (x == 1) {
+            return 1;
         }
-        return result;
+        return x * factorial(x - 1);
     }
 
     public static double arrangement(int n, int m) throws NumberErrorException {
@@ -25,13 +22,10 @@ public class Maths {
             throw new NumberErrorException("n不能小于m");
         }
 
-        double result = 1;
-        for (int i = 0; i < m; i++) {
-            result *= n - i;
+        if (m == 0) {
+            return 1;
         }
-
-        //return factorial(n) / factorial(n - m);
-        return result;
+        return n * arrangement(n - 1, m - 1);
     }
 
     public static double combination(int n, int m) throws NumberErrorException {

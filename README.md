@@ -4,7 +4,6 @@
 
 ## 尚未解决的问题
 
-- Math 将三个方法的返回值设成double了，等学了Integer类后再改
 - train.t5.Complex5 现在是四子棋状态，还不知道有什么bug
 - train.t10.Training12 不会正则(。>︿<)_θ)
 
