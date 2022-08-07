@@ -13,6 +13,7 @@ public class Complex1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.DATE, 1);     //避免31号的影响
         System.out.print("请输入年份：");
         calendar.set(Calendar.YEAR, scan.nextInt());
         System.out.print("请输入月份(1~12)：");
