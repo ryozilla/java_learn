@@ -28,6 +28,7 @@
 - public static double combination(int n, int m) -> 计算组合数
 - public static boolean isPrime(int n) -> 判断一个整数是不是素数
 - public static int calcGCD(int x, int y) -> 找出两个数的最大公因数
+- public static int calcLCM(int x, int y) -> 找出两个数的最小公倍数
 
 ### Array
 

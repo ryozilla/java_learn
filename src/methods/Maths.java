@@ -95,4 +95,8 @@ public class Maths {
             }
         }
     }
+
+    public static int calcLCM(int x, int y) throws NumberErrorException {
+        return x * y / calcGCD(x, y);
+    }
 }
