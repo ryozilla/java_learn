@@ -42,11 +42,6 @@ public class Training1 {
         public double getAssist() {
             return assist;
         }
-
-        @Override
-        public String toString() {
-            return name + "\t\t" + nickname + "\t\t" + score + "\t\t" + backboard + "\t\t" + assist;
-        }
     }
 
     protected static void printNBAStars(List<NBAStars> stars){
